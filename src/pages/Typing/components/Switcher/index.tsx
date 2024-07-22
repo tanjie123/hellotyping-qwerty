@@ -1,6 +1,5 @@
 import { TypingContext, TypingStateActionType } from '../../store'
 import ErrorBookButton from '../ErrorBookButton'
-import HandPositionIllustration from '../HandPositionIllustration'
 import LoopWordSwitcher from '../LoopWordSwitcher'
 import Setting from '../Setting'
 import SoundSwitcher from '../SoundSwitcher'
@@ -82,9 +81,6 @@ export default function Switcher() {
         >
           {isOpenDarkMode ? <IconMoon className="icon" /> : <IconSun className="icon" />}
         </button>
-      </Tooltip>
-      <Tooltip className="h-7 w-7" content="指法图示">
-        <HandPositionIllustration></HandPositionIllustration>
       </Tooltip>
       <Tooltip content="设置">
         <Setting />
