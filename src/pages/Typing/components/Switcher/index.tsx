@@ -1,5 +1,4 @@
 import { TypingContext, TypingStateActionType } from '../../store'
-import AnalysisButton from '../AnalysisButton'
 import ErrorBookButton from '../ErrorBookButton'
 import HandPositionIllustration from '../HandPositionIllustration'
 import LoopWordSwitcher from '../LoopWordSwitcher'
@@ -69,10 +68,6 @@ export default function Switcher() {
 
       <Tooltip content="错题本">
         <ErrorBookButton />
-      </Tooltip>
-
-      <Tooltip className="h-7 w-7" content="查看数据统计">
-        <AnalysisButton />
       </Tooltip>
 
       <Tooltip className="h-7 w-7" content="开关深色模式">

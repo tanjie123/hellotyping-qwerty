@@ -11,7 +11,6 @@ import 'react-app-polyfill/stable'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
-const AnalysisPage = lazy(() => import('./pages/Analysis'))
 const GalleryPage = lazy(() => import('./pages/Gallery-N'))
 
 if (process.env.NODE_ENV === 'production') {
@@ -37,7 +36,6 @@ function Root() {
           <Routes>
             <Route index element={<TypingPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/analysis" element={<AnalysisPage />} />
             <Route path="/error-book" element={<ErrorBook />} />
             <Route path="/*" element={<Navigate to="/" />} />
           </Routes>
