@@ -38,17 +38,6 @@ const App: React.FC = () => {
   const reviewModeInfo = useAtomValue(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
 
-  useEffect(() => {
-    // 检测用户设备
-    if (!IsDesktop()) {
-      setTimeout(() => {
-        alert(
-          ' Qwerty Learner 目的为提高键盘工作者的英语输入效率，目前暂未适配移动端，希望您使用桌面端浏览器访问。如您使用的是 Ipad 等平板电脑设备，可以使用外接键盘使用本软件。',
-        )
-      }, 500)
-    }
-  }, [])
-
   // 在组件挂载和currentDictId改变时，检查当前字典是否存在，如果不存在，则将其重置为默认值
   useEffect(() => {
     const id = currentDictId
