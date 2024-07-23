@@ -27,7 +27,7 @@ export async function exportDatabase(callback: (exportProgress: ExportProgress) 
   const compressed = pako.gzip(json)
   const compressedBlob = new Blob([compressed])
   const currentDate = getCurrentDate()
-  saveAs(compressedBlob, `Qwerty-Learner-User-Data-${currentDate}.gz`)
+  saveAs(compressedBlob, `Hellotyping-Qwerty-User-Data-${currentDate}.gz`)
   recordDataAction({ type: 'export', size: compressedBlob.size, wordCount, chapterCount })
 }
 
