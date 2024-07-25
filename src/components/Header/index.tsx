@@ -3,7 +3,9 @@ import type React from 'react'
 
 const Header: React.FC<PropsWithChildren> = ({ children }) => {
   const backToHome = () => {
-    window.location.href = 'https://hellotyping.com'
+    if (window.top) {
+      window.top.location.href = 'https://hellotyping.com'
+    }
   }
 
   return (
