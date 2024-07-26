@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <title>打字侠 - 通过键盘打字记忆英语单词</title>
+    <meta name="description" content="通过键盘打字记忆英语单词" />
+    <meta name="keywords" content="打字练习软件, 单词记忆工具, 英语学习, 背单词, 英语肌肉记忆锻炼, 免费背单词软件" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#818CF8" />
+    <script>
+      // Dark mode init
+      if (
+        ('state' in localStorage && JSON.parse(localStorage.state).darkMode) ||
+        (!('state' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark')
+      }
+    </script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>打字侠 - 通过键盘打字记忆英语单词</title>
-  <meta name="description" content="通过键盘打字记忆英语单词" />
-  <meta name="keywords" content="打字练习软件, 单词记忆工具, 英语学习, 背单词, 英语肌肉记忆锻炼, 免费背单词软件" />
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#818CF8" />
-  <script>
-    // Dark mode init
-    if (
-      ('state' in localStorage && JSON.parse(localStorage.state).darkMode) ||
-      (!('state' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
-      document.documentElement.classList.add('dark')
-    }
-  </script>
-</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8W7SJHS8R4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/index.tsx"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8W7SJHS8R4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-8W7SJHS8R4');
-  </script>
-</body>
-
+      gtag('config', 'G-8W7SJHS8R4')
+    </script>
+  </body>
 </html>
