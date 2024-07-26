@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-  <head>
-    <meta charset="UTF-8" />
-    <title>打字侠 - 通过电脑打字记忆英语单词</title>
-    <meta name="description" content="通过打字记忆英语单词" />
-    <meta name="keywords" content="打字练习软件, 单词记忆工具, 英语学习, 背单词, 英语肌肉记忆锻炼, 免费背单词软件" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#818CF8" />
-    <script>
-      // Dark mode init
-      if (
-        ('state' in localStorage && JSON.parse(localStorage.state).darkMode) ||
-        (!('state' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-      ) {
-        document.documentElement.classList.add('dark')
-      }
-    </script>
-  </head>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/index.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>打字侠 - 通过键盘打字记忆英语单词</title>
+  <meta name="description" content="通过键盘打字记忆英语单词" />
+  <meta name="keywords" content="打字练习软件, 单词记忆工具, 英语学习, 背单词, 英语肌肉记忆锻炼, 免费背单词软件" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#818CF8" />
+  <script>
+    // Dark mode init
+    if (
+      ('state' in localStorage && JSON.parse(localStorage.state).darkMode) ||
+      (!('state' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark')
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/index.tsx"></script>
+</body>
+
 </html>
